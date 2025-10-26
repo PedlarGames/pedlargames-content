@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-10-26T05:42:50.085Z",
+  "games": {
+    "published": [
+      {
+        "slug": "example-game",
+        "title": "Example Game",
+        "path": "content/games/published/example-game",
+        "coverImage": "cover.jpg",
+        "gallery": ["gallery/1.jpg"],
+        "downloads": ["downloads/example-game-v1.0.zip"],
+        "featured": true,
+        "releaseDate": "2025-10-15"
+      }
+    ],
+    "wip": [
+      {
+        "slug": "game-in-progress",
+        "title": "Game in Progress",
+        "path": "content/games/wip/game-in-progress",
+        "coverImage": "cover.jpg",
+        "gallery": ["gallery/1.jpg"],
+        "status": "wip",
+        "expectedRelease": "2026-03-01"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "slug": "level-editor",
+      "title": "Level Editor",
+      "path": "content/tools/level-editor",
+      "coverImage": "cover.jpg",
+      "downloads": ["downloads/level-editor-v2.1.0.zip"],
+      "version": "2.1.0",
+      "releaseDate": "2025-08-20"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "awesome-technique",
+      "title": "Awesome Game Development Technique",
+      "path": "content/articles/2025-10-01-awesome-technique",
+      "date": "2025-10-01",
+      "category": "tutorial",
+      "featured": true
+    }
+  ],
+  "blog": [
+    {
+      "slug": "devlog-001",
+      "title": "Devlog #001: Starting the Journey",
+      "path": "content/blog/2025-09-14-devlog-001",
+      "date": "2025-09-14",
+      "category": "devlog"
+    }
+  ]
+}
