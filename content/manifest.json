@@ -22,7 +22,8 @@
         "coverImage": "cover.png",
         "gallery": ["gallery/1.jpg"],
         "status": "wip",
-        "expectedRelease": "2026-03-01"
+        "expectedRelease": "2026-03-01",
+        "featured": true
       }
     ]
   },
