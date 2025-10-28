@@ -10,7 +10,12 @@
         "title": "Stonehenge",
         "path": "content/games/published/stonehenge",
         "coverImage": "cover.png",
-        "gallery": ["gallery/1.jpg"],
+        "gallery": [
+          "gallery/stonehenge-summer-sunrise.png",
+          "gallery/stonehenge-slaughter-stone.png",
+          "gallery/stonehenge-trilithons.png",
+          "gallery/stonehenge-night-door.png"
+        ],
         "downloads": [
           {
             "filename": "Stonehenge_Setup.exe",
