@@ -61,11 +61,11 @@
   ],
   "articles": [
     {
-      "slug": "awesome-technique",
-      "title": "Awesome Game Development Technique",
-      "path": "content/articles/2025-10-01-awesome-technique",
-      "date": "2025-10-01",
-      "category": "tutorial",
+      "slug": "about-pedlargames",
+      "title": "About Pedlar Games",
+      "path": "content/articles/2025-10-28-about-pedlargames",
+      "date": "2025-10-28",
+      "category": "info",
       "featured": true
     }
   ],
