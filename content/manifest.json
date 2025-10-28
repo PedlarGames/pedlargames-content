@@ -1,4 +1,6 @@
+
 {
+  "$schema": "../manifest.schema.json",
   "version": "1.0.0",
   "lastUpdated": "2025-10-26T05:42:50.085Z",
   "games": {
