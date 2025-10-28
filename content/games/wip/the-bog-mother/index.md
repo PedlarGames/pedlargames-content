@@ -1,27 +1,33 @@
 ---
-title: Game in Progress
-slug: game-in-progress
-description: An upcoming game currently in development
+title: The Bog Mother
+slug: the-bog-mother
+description: A narrative-driven text-based RPG set in a mysterious village, where your choices shape the story and uncover dark secrets.
 status: wip
-startDate: 2025-09-01
-expectedRelease: 2026-03-01
+expectedRelease: TBA
 platforms:
   - Windows
-  - Nintendo Switch
+  - Linux
+  - MacOS
+  - Web (HTML5 demo)
 tags:
   - rpg
-  - strategy
+  - interactive fiction
+  - adventure
+  - story-driven
+  - choices matter
 ---
 
-# Game in Progress
+## About the Game
+
+Travel to the village of Fenbourne and uncover the mysteries surrounding the enigmatic Bog Mother. This narrative-driven text-based RPG combines exploration, character interaction, and choice-driven storytelling.
+
+## Game in Progress
 
 This game is currently in active development. Check back for updates!
 
 ## Current Status
 
 - **Phase**: Alpha
-- **Completion**: 35%
-- **Last Update**: October 2025
 
 ## Planned Features
 
