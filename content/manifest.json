@@ -40,15 +40,6 @@
   },
   "tools": [
     {
-      "slug": "level-editor",
-      "title": "Level Editor",
-      "path": "content/tools/level-editor",
-      "coverImage": "cover.jpg",
-      "downloads": ["downloads/level-editor-v2.1.0.zip"],
-      "version": "2.1.0",
-      "releaseDate": "2025-08-20"
-    },
-    {
       "slug": "paletteswap",
       "title": "PaletteSwap",
       "path": "content/tools/paletteswap",
