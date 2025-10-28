@@ -19,7 +19,7 @@ Explore a moderately accurate 3D recreation of the ancient Stonehenge monument, 
 
 ## About
 
-This is a simple 3D scene built to show how Stonehenge might have appeared circa 2400 BC. Wander around the monument and take in the details of this iconic structure as it might have looked thousands of years ago.
+This is a simple 3D scene built to show how Stonehenge might have appeared circa 2400 BC. I've attempted to recreate the original state and layout of the stones based on archaeological evidence. The scene includes astronomical alignments and seasonally accurate lighting to simulate solstices and equinoxes.
 
 Created using Blender and the Godot game engine.
 
