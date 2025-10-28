@@ -2,6 +2,8 @@
 
 A desktop utility application built with Godot 4.5 for batch color palette remapping of images. Perfect for game developers, pixel artists, and designers who need to quickly retheme sprite sets or apply color transformations to multiple images at once.
 
+Works best with pixel art with low resolution images, but can also handle photos with quantized palettes.
+
 ## Features
 
 **Batch Processing** - Process multiple images at once  
@@ -17,7 +19,7 @@ A desktop utility application built with Godot 4.5 for batch color palette remap
 
 ## Installation
 
-Download the Windows installer here: [PaletteSwap Setup.exe](./downloads/PaletteSwap_Setup.exe)
+Download the Windows installer here from the link at the bottom of the page. Run the installer and follow the prompts to install PaletteSwap on your system.
 
 You may see a SmartScreen warning on first run; this is normal for new apps. Click "More info" and "Run anyway" to proceed.
 
@@ -41,8 +43,9 @@ You may see a SmartScreen warning on first run; this is normal for new apps. Cli
    - Select the target color you want to map to
    - **OR** use the Lospec importer:
      - Paste a Lospec palette URL (e.g., `https://lospec.com/palette-list/resurrect-64`)
-     - Click "Import" to automatically apply colors from the Lospec palette
-   - Mappings are saved automatically
+     - Click "Import" to retrieve colors from the Lospec palette
+     - Click a lospec color to assign it to the selected source color
+     - Click the target color picker to finalize
 
 4. **Export**
    - Click "Export Images"
@@ -74,7 +77,7 @@ You may see a SmartScreen warning on first run; this is normal for new apps. Cli
 
 - **File Suffix** - Customize output filename suffix
 - **Preserve Alpha** - Keep original alpha channel when mapping RGB only
-- **Color Count** - For quantized mode, specify number of colors (8-256)
+- **Text Size** - Adjust UI font size for accessibility
 
 #### Before/After Preview
 
