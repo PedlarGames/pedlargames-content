@@ -53,7 +53,16 @@
       "title": "PaletteSwap",
       "path": "content/tools/paletteswap",
       "coverImage": "cover.jpg",
-      "downloads": ["downloads/PaletteSwap_Setup.exe"],
+      "downloads": [
+        {
+          "filename": "PaletteSwap_v1.0.0.zip",
+          "platform": "Cross-Platform",
+          "version": "0.1.0",
+          "size": 2048576,
+          "sizeFormatted": "33.1 MB",
+          "url": "https://github.com/PedlarGames/pedlargames-content/releases/download/paletteswap-v0.1.0/PaletteSwap_Setup.exe"
+        }
+      ],
       "version": "0.1.0",
       "releaseDate": "2025-10-28",
       "featured": true
