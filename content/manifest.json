@@ -75,11 +75,12 @@
   ],
   "blog": [
     {
-      "slug": "devlog-001",
-      "title": "Devlog #001: Starting the Journey",
-      "path": "content/blog/2025-09-14-devlog-001",
-      "date": "2025-09-14",
-      "category": "devlog"
+      "slug": "first-post",
+      "title": "First Post: Welcome to the Pedlar Games Blog",
+      "path": "content/blog/2025-10-28-first-post",
+      "date": "2025-10-28",
+      "category": "updates",
+      "featured": true
     }
   ]
 }
