@@ -1,5 +1,5 @@
 ---
-title: "First Post: Welcome to the Pedlar Games Blog"
+title: "First Post"
 slug: first-post
 date: 2025-10-28
 author: HugePedlar
