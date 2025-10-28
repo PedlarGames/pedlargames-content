@@ -23,7 +23,7 @@ Travel to the village of Fenbourne and uncover the mysteries surrounding the eni
 
 ## Game in Progress
 
-This game is currently in active development. Check back for updates!
+This game is currently in active development.
 
 ## Current Status
 
@@ -36,4 +36,4 @@ This game is currently in active development. Check back for updates!
 - Character customization
 - Multiple endings
 
-Stay tuned for more information as development progresses!
+Stay tuned for more information as development progresses.
