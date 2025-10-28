@@ -51,7 +51,7 @@
       "downloads": [
         {
           "filename": "PaletteSwap_Setup.exe",
-          "platform": "Cross-Platform",
+          "platform": "Windows",
           "version": "0.1.0",
           "size": 34725632,
           "sizeFormatted": "33.1 MB",
@@ -61,6 +61,14 @@
       "version": "0.1.0",
       "releaseDate": "2025-10-28",
       "featured": true
+    },
+    {
+      "slug": "location-graph-editor",
+      "title": "Location Graph Editor",
+      "path": "content/tools/location-graph-editor",
+      "coverImage": "cover.jpg",
+      "version": "0.1.0",
+      "featured": false
     }
   ],
   "articles": [
