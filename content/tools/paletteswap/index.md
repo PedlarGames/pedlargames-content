@@ -1,0 +1,149 @@
+# PaletteSwap - Godot 4 Color Palette Remapping Tool
+
+A desktop utility application built with Godot 4 for batch color palette remapping of images. Perfect for game developers, pixel artists, and designers who need to quickly retheme sprite sets or apply color transformations to multiple images at once.
+
+## Features
+
+✨ **Batch Processing** - Process multiple images at once  
+🎨 **Palette Extraction** - Exact color enumeration or quantized palette reduction  
+🔄 **Color Mapping** - Visual interface to remap source colors to target colors  
+💾 **Save/Load Mappings** - Persist palette mappings as JSON for reuse  
+🌐 **Lospec Import** - Import color palettes directly from Lospec.com  
+📁 **Flexible Input** - Load entire folders or individual images  
+🖼️ **Format Support** - PNG, JPG, WebP, BMP  
+⚡ **Performance** - Efficient pixel processing with progress tracking  
+🎯 **Alpha Handling** - Option to preserve or include alpha in mapping  
+🔍 **RGB Grouping** - Group colors by RGB values, ignoring alpha variations
+
+## Installation
+
+Download the Windows installer here: [PaletteSwap Setup.exe](https://example.com/paletteswap-setup.exe)
+
+You may see a SmartScreen warning on first run; this is normal for new apps. Click "More info" and "Run anyway" to proceed.
+
+## Usage
+
+### Basic Workflow
+
+1. **Load Images**
+   - Click "Select Folder" to load all images from a directory
+   - Or click "Add Images" to select individual files
+
+2. **Extract Palette**
+   - Choose mode:
+     - **Exact** - All unique colors (best for pixel art)
+     - **Quantized** - Reduce to N colors (best for photos)
+   - Click "Extract Palette"
+   - Wait for extraction to complete
+
+3. **Map Colors**
+   - For each source color (left), click the color picker (right)
+   - Select the target color you want to map to
+   - **OR** use the Lospec importer:
+     - Paste a Lospec palette URL (e.g., `https://lospec.com/palette-list/resurrect-64`)
+     - Click "Import" to automatically apply colors from the Lospec palette
+   - Mappings are saved automatically
+
+4. **Export**
+   - Click "Export Images"
+   - Select output directory
+   - Configure suffix (default: "_remap")
+   - Wait for processing to complete
+
+### Advanced Features
+
+#### Lospec Integration
+
+- **Import from Lospec.com** - Paste a palette URL to automatically load colors
+- Browse [Lospec Palette List](https://lospec.com/palette-list) for thousands of curated palettes
+- Colors are applied sequentially to your palette entries
+- See [Lospec Import Guide](docs/LOSPEC_IMPORT.md) for detailed instructions
+
+#### Save/Load Mappings
+
+- **Save Mapping** - Export your color mappings as JSON
+- **Load Mapping** - Import previously saved mappings
+- Mappings are stored in `user://mappings/`
+
+#### Palette Options
+
+- **Skip Fully Transparent Pixels** - Exclude pixels with alpha = 0 from palette extraction (reduces palette clutter)
+- **Group by RGB (Alpha Variations)** - Merge colors with identical RGB but different alpha values (useful for transparency gradients and anti-aliased sprites)
+
+#### Settings
+
+- **File Suffix** - Customize output filename suffix
+- **Preserve Alpha** - Keep original alpha channel when mapping RGB only
+- **Color Count** - For quantized mode, specify number of colors (8-256)
+
+#### Before/After Preview
+
+- Select an image from the list to see a side-by-side comparison
+- Preview updates automatically when you change color mappings
+- Thumbnails are cached for performance
+
+## Limitations
+
+- **Color Space** - Works in sRGB; gamma considerations apply
+- **Format Support** - JPG has no alpha channel
+- **Large Palettes** - Photos may have thousands of colors (use quantization)
+- **Memory** - All images loaded into memory during processing
+
+## Examples
+
+### Example 1: Forest to Desert Theme
+
+```
+1. Load forest sprite set
+2. Extract exact palette (greens, browns)
+3. Map:
+   - Dark Green → Sand Brown
+   - Light Green → Light Sand
+   - Grass Green → Desert Yellow
+4. Export with suffix "_desert"
+```
+
+### Example 2: Photo Color Grading
+
+```
+1. Load photo
+2. Extract quantized palette (64 colors)
+3. Shift all hues toward warm tones
+4. Export with suffix "_warm"
+```
+
+## Troubleshooting
+
+**Q: "No colors extracted"**  
+A: Ensure images are loaded first. Check status bar for errors.
+
+**Q: "Export fails"**  
+A: Verify output directory exists and has write permissions.
+
+**Q: "Too many colors"**  
+A: Use Quantized mode to reduce palette size.
+
+**Q: "Colors don't match exactly"**  
+A: Try toggling "Include Alpha" - alpha channel affects color matching.
+
+## License
+
+This project is provided as-is for educational and commercial use. See LICENSE file for details.
+
+## Acknowledgments
+
+- Built with **Godot Engine 4.5**
+- Inspired by pixel art workflows and sprite retheming needs
+
+## Roadmap
+
+- [ ] HSV-based color mapping
+- [ ] Per-channel mapping (hue/saturation/lightness)
+- [ ] GPU shader-based processing
+- [ ] Command-line interface
+- [ ] Godot editor plugin variant
+- [ ] Batch undo/redo
+- [ ] Preview panel with before/after comparison
+- [ ] Nearest-color matching for partial mappings
+
+---
