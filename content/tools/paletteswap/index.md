@@ -17,7 +17,7 @@ A desktop utility application built with Godot 4.5 for batch color palette remap
 
 ## Installation
 
-Download the Windows installer here: [PaletteSwap Setup.exe](https://example.com/paletteswap-setup.exe)
+Download the Windows installer here: [PaletteSwap Setup.exe](./downloads/PaletteSwap_Setup.exe)
 
 You may see a SmartScreen warning on first run; this is normal for new apps. Click "More info" and "Run anyway" to proceed.
 

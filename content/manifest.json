@@ -44,7 +44,7 @@
       "title": "PaletteSwap",
       "path": "content/tools/paletteswap",
       "coverImage": "cover.jpg",
-      "downloads": ["downloads/paletteswap-v1.0.0.zip"],
+      "downloads": ["downloads/PaletteSwap_Setup.exe"],
       "version": "0.1.0",
       "releaseDate": "2025-10-28",
       "featured": true
