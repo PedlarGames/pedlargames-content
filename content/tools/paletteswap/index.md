@@ -19,7 +19,7 @@ Works best with pixel art with low resolution images, but can also handle photos
 
 ## Installation
 
-Download the Windows installer here from the link at the bottom of the page. Run the installer and follow the prompts to install PaletteSwap on your system.
+Download the Windows installer from the link at the bottom of the page. Run the installer and follow the prompts to install PaletteSwap on your system.
 
 You may see a SmartScreen warning on first run; this is normal for new apps. Click "More info" and "Run anyway" to proceed.
 
@@ -143,8 +143,6 @@ This project is provided as-is for educational and commercial use. See LICENSE f
 - [ ] HSV-based color mapping
 - [ ] Per-channel mapping (hue/saturation/lightness)
 - [ ] GPU shader-based processing
-- [ ] Command-line interface
 - [ ] Godot editor plugin variant
 - [ ] Batch undo/redo
-- [ ] Preview panel with before/after comparison
 - [ ] Nearest-color matching for partial mappings
