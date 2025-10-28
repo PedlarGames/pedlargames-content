@@ -1,19 +1,19 @@
-# PaletteSwap - Godot 4 Color Palette Remapping Tool
+# PaletteSwap - Color Palette Remapping Tool
 
-A desktop utility application built with Godot 4 for batch color palette remapping of images. Perfect for game developers, pixel artists, and designers who need to quickly retheme sprite sets or apply color transformations to multiple images at once.
+A desktop utility application built with Godot 4.5 for batch color palette remapping of images. Perfect for game developers, pixel artists, and designers who need to quickly retheme sprite sets or apply color transformations to multiple images at once.
 
 ## Features
 
-✨ **Batch Processing** - Process multiple images at once  
-🎨 **Palette Extraction** - Exact color enumeration or quantized palette reduction  
-🔄 **Color Mapping** - Visual interface to remap source colors to target colors  
-💾 **Save/Load Mappings** - Persist palette mappings as JSON for reuse  
-🌐 **Lospec Import** - Import color palettes directly from Lospec.com  
-📁 **Flexible Input** - Load entire folders or individual images  
-🖼️ **Format Support** - PNG, JPG, WebP, BMP  
-⚡ **Performance** - Efficient pixel processing with progress tracking  
-🎯 **Alpha Handling** - Option to preserve or include alpha in mapping  
-🔍 **RGB Grouping** - Group colors by RGB values, ignoring alpha variations
+**Batch Processing** - Process multiple images at once  
+**Palette Extraction** - Exact color enumeration or quantized palette reduction  
+**Color Mapping** - Visual interface to remap source colors to target colors  
+**Save/Load Mappings** - Persist palette mappings as JSON for reuse  
+**Lospec Import** - Import color palettes directly from Lospec.com  
+**Flexible Input** - Load entire folders or individual images  
+**Format Support** - PNG, JPG, WebP, BMP  
+**Performance** - Efficient pixel processing with progress tracking  
+**Alpha Handling** - Option to preserve or include alpha in mapping  
+**RGB Grouping** - Group colors by RGB values, ignoring alpha variations
 
 ## Installation
 
@@ -56,8 +56,8 @@ You may see a SmartScreen warning on first run; this is normal for new apps. Cli
 
 - **Import from Lospec.com** - Paste a palette URL to automatically load colors
 - Browse [Lospec Palette List](https://lospec.com/palette-list) for thousands of curated palettes
-- Colors are applied sequentially to your palette entries
-- See [Lospec Import Guide](docs/LOSPEC_IMPORT.md) for detailed instructions
+- After importing, lospec colors will be shown above your current mappings for easy selection
+- Click a lospec color to assign it to the selected source color, then click the target color picker to finalize
 
 #### Save/Load Mappings
 
@@ -145,5 +145,3 @@ This project is provided as-is for educational and commercial use. See LICENSE f
 - [ ] Batch undo/redo
 - [ ] Preview panel with before/after comparison
 - [ ] Nearest-color matching for partial mappings
-
----
