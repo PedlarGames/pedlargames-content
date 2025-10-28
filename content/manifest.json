@@ -46,7 +46,8 @@
       "coverImage": "cover.jpg",
       "downloads": ["downloads/paletteswap-v1.0.0.zip"],
       "version": "0.1.0",
-      "releaseDate": "2025-10-28"
+      "releaseDate": "2025-10-28",
+      "featured": true
     }
   ],
   "articles": [
