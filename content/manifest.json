@@ -36,7 +36,7 @@
         "title": "The Bog Mother",
         "path": "content/games/wip/the-bog-mother",
         "coverImage": "cover.png",
-        "gallery": ["gallery/1.jpg"],
+        "gallery": [],
         "status": "wip",
         "expectedRelease": "2026-03-01",
         "featured": true
