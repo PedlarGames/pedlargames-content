@@ -60,6 +60,59 @@
     }
   },
   "definitions": {
+    "download": {
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "Simple relative path (legacy format)",
+          "pattern": "^downloads/"
+        },
+        {
+          "type": "object",
+          "description": "Detailed download information with external URLs",
+          "required": ["filename", "url"],
+          "properties": {
+            "filename": {
+              "type": "string",
+              "description": "Name of the downloadable file"
+            },
+            "platform": {
+              "type": "string",
+              "description": "Target platform (Windows, macOS, Linux, etc.)"
+            },
+            "version": {
+              "type": "string",
+              "description": "Version of the download"
+            },
+            "size": {
+              "type": "integer",
+              "description": "File size in bytes"
+            },
+            "sizeFormatted": {
+              "type": "string",
+              "description": "Human-readable file size"
+            },
+            "url": {
+              "type": "string",
+              "description": "Direct download URL (can be external CDN or GitHub Release)",
+              "format": "uri"
+            },
+            "checksums": {
+              "type": "object",
+              "description": "File integrity checksums",
+              "properties": {
+                "sha256": {
+                  "type": "string"
+                },
+                "md5": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "publishedGame": {
       "type": "object",
       "required": ["slug", "title", "path", "coverImage", "releaseDate"],
@@ -94,10 +147,9 @@
         },
         "downloads": {
           "type": "array",
-          "description": "Array of download file paths relative to game directory",
+          "description": "Array of downloads (string paths or detailed objects)",
           "items": {
-            "type": "string",
-            "pattern": "^downloads/"
+            "$ref": "#/definitions/download"
           }
         },
         "releaseDate": {
@@ -187,10 +239,9 @@
         },
         "downloads": {
           "type": "array",
-          "description": "Array of download file paths relative to tool directory",
+          "description": "Array of downloads (string paths or detailed objects)",
           "items": {
-            "type": "string",
-            "pattern": "^downloads/"
+            "$ref": "#/definitions/download"
           }
         },
         "version": {
@@ -202,6 +253,11 @@
           "type": "string",
           "description": "Release date in YYYY-MM-DD format",
           "format": "date"
+        },
+        "featured": {
+          "type": "boolean",
+          "description": "Whether to feature on the homepage",
+          "default": false
         }
       }
     },
