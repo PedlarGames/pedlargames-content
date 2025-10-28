@@ -6,14 +6,23 @@
   "games": {
     "published": [
       {
-        "slug": "example-game",
-        "title": "Example Game",
-        "path": "content/games/published/example-game",
-        "coverImage": "cover.jpg",
+        "slug": "stonehenge",
+        "title": "Stonehenge",
+        "path": "content/games/published/stonehenge",
+        "coverImage": "cover.png",
         "gallery": ["gallery/1.jpg"],
-        "downloads": ["downloads/example-game-v1.0.zip"],
-        "featured": false,
-        "releaseDate": "2025-10-15"
+        "downloads": [
+          {
+            "filename": "Stonehenge_Setup.exe",
+            "platform": "Windows",
+            "version": "1.0.0",
+            "size": 576785172,
+            "sizeFormatted": "550.07 MB",
+            "url": "https://github.com/PedlarGames/pedlargames-content/releases/download/stonehenge-v1.0.0/Stonehenge_Setup.exe"
+          }
+        ],
+        "featured": true,
+        "releaseDate": "2025-10-28"
       }
     ],
     "wip": [
