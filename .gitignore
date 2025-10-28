@@ -1,0 +1,16 @@
+# Large download files - use GitHub Releases instead
+*.exe
+*.msi
+*.dmg
+*.pkg
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
