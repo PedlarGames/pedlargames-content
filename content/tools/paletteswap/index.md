@@ -96,7 +96,7 @@ You may see a SmartScreen warning on first run; this is normal for new apps. Cli
 
 ### Example 1: Forest to Desert Theme
 
-```
+```markdown
 1. Load forest sprite set
 2. Extract exact palette (greens, browns)
 3. Map:
@@ -108,7 +108,7 @@ You may see a SmartScreen warning on first run; this is normal for new apps. Cli
 
 ### Example 2: Photo Color Grading
 
-```
+```markdown
 1. Load photo
 2. Extract quantized palette (64 colors)
 3. Shift all hues toward warm tones

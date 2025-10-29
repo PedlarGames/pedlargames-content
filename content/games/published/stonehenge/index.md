@@ -35,7 +35,7 @@ The scene includes the famous solstitial alignments, where the sun rises directl
 
 ## Installation
 
-Download Stonehenge_Setup.exe from the downloads section to install the game on your Windows PC.
+Download Stonehenge_Setup.exe from the downloads section below to install the game on your Windows PC.
 
 You may encounter Windows SmartScreen warnings when running the installer for the first time, as this is a new application. You can bypass this by clicking "More info" and then "Run anyway".
 
