@@ -77,7 +77,8 @@
       "path": "content/tools/location-graph-editor",
       "coverImage": "cover.jpg",
       "version": "0.1.0",
-      "featured": false
+      "featured": false,
+      "releaseDate": "2025-10-28"
     }
   ],
   "articles": [
