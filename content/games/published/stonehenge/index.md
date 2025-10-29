@@ -19,7 +19,7 @@ Explore a moderately accurate 3D recreation of the ancient Stonehenge monument, 
 
 ## About
 
-This is a simple 3D scene built to show how Stonehenge might have appeared circa 2400 BC. I've attempted to recreate the original state and layout of the stones based on archaeological evidence. The scene includes astronomical alignments and seasonally accurate lighting to simulate solstices and equinoxes.
+This is a simple 3D scene built to show how Stonehenge might have appeared circa 2400 BC. I've attempted to recreate the original state and layout of the stones based on current archaeological understanding. The scene includes astronomical alignments and seasonally accurate lighting to simulate solstices and equinoxes.
 
 Created using Blender and the Godot game engine.
 
@@ -27,7 +27,7 @@ Created using Blender and the Godot game engine.
 
 Stonehenge was built in several phases over many centuries, so it's difficult to create a true representation of how it looked at any one time. This version is as close as I could get to how it might have appeared around 2400 BC, before many of the stones fell or were removed (the latter part of the third phase of construction). This is when the monument was likely at its most complete, with the full set of the iconic sandstone sarsens and lintels in place.
 
-The Altar Stone today lies flat under a fallen sarsen from the Great Trilithon, but it's possible that it was originally upright to catch the sunset in midwinter. I rather like that idea, so in this recreation, I've placed it standing upright. Very recently it was discovered that the Altar Stone may have been brought all the way from north-east Scotland, a distance of some 430 miles (690 km).
+The Altar Stone today lies flat under a fallen sarsen from the Great Trilithon, but it's possible that it was originally upright to catch the sunset in midwinter. I rather like that idea, so in this recreation I've placed it standing upright. Very recently it was discovered that the Altar Stone may have been brought all the way from north-east Scotland, a distance of some 430 miles (690 km).
 
 ### Astronomical Alignments
 
@@ -35,7 +35,7 @@ The scene includes the famous solstitial alignments, where the sun rises directl
 
 ## Installation
 
-Download the Stonehenge_Setup.exe from the downloads section to install the game on your Windows PC.
+Download Stonehenge_Setup.exe from the downloads section to install the game on your Windows PC.
 
 You may encounter Windows SmartScreen warnings when running the installer for the first time, as this is a new application. You can bypass this by clicking "More info" and then "Run anyway".
 
