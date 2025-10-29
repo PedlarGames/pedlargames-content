@@ -39,6 +39,15 @@
         "status": "wip",
         "expectedRelease": "2026-03-01",
         "featured": true
+      },
+      {
+        "slug": "vagabonds-wake",
+        "title": "Vagabond's Wake",
+        "path": "content/games/wip/vagabonds-wake",
+        "coverImage": "cover.png",
+        "status": "wip",
+        "expectedRelease": "2026-12-01",
+        "featured": true
       }
     ]
   },
