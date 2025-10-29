@@ -36,4 +36,6 @@ This game is currently in active development.
 - Character customization
 - Multiple endings
 
-Stay tuned for more information as development progresses.
+[Sign up for more information as development progresses.](https://forms.office.com/r/xhaq55ePpS)
+
+(I'll only use your email to send occasional updates about the game's development. Your information will not be shared with third parties or used for other communications.)
