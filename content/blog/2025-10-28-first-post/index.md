@@ -9,6 +9,6 @@ tags:
   - behind-the-scenes
 ---
 
-## First Post: Welcome to the Pedlar Games Blog
+## First Post
 
 Gotta have a blog, right?

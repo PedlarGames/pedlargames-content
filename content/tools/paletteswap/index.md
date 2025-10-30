@@ -1,6 +1,6 @@
 # PaletteSwap - Color Palette Remapping Tool
 
-A desktop utility application built with Godot 4.5 for batch color palette remapping of images. Perfect for game developers, pixel artists, and designers who need to quickly retheme sprite sets or apply color transformations to multiple images at once.
+A desktop utility application built with Godot 4.5 for batch color palette remapping of images. Useful for game developers, pixel artists, and designers who need to quickly retheme sprite sets or apply color transformations to multiple images at once.
 
 Works best with pixel art with low resolution images, but can also handle photos with quantized palettes.
 
@@ -136,7 +136,7 @@ This project is provided as-is for educational and commercial use. See LICENSE f
 ## Acknowledgments
 
 - Built with **Godot Engine 4.5**
-- Inspired by pixel art workflows and sprite retheming needs
+- Inspired by the fantastic pixel art community on [**Lospec.com**](https://lospec.com)
 
 ## Roadmap
 
