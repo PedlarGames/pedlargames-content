@@ -36,6 +36,12 @@
         "title": "The Bog Mother",
         "path": "content/games/wip/the-bog-mother",
         "coverImage": "cover.png",
+        "gallery": [
+          "gallery/cover.png",
+          "gallery/the-bog-mother-roles.png",
+          "gallery/the-bog-mother-solar.png",
+          "gallery/the-bog-mother-updates-qrcode.png"
+        ],
         "status": "wip",
         "expectedRelease": "2026-03-01",
         "featured": true
@@ -45,6 +51,13 @@
         "title": "Vagabond's Wake",
         "path": "content/games/wip/vagabonds-wake",
         "coverImage": "cover.png",
+        "gallery": [
+          "gallery/cover.png",
+          "gallery/vagabond-engineering.png",
+          "gallery/vagabond-pcos-terminal.png",
+          "gallery/vagabond-stateroom.png",
+          "gallery/vagabond-updates-qrcode.png"
+        ],
         "status": "wip",
         "expectedRelease": "2026-12-01",
         "featured": true
