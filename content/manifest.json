@@ -87,9 +87,9 @@
       "title": "Location Graph Editor",
       "path": "content/tools/location-graph-editor",
       "coverImage": "cover.jpg",
-      "version": "0.1.0",
-      "featured": false,
-      "releaseDate": "2025-10-28"
+      "version": "1.0.3",
+      "featured": true,
+      "releaseDate": "2025-11-02"
     }
   ],
   "articles": [
