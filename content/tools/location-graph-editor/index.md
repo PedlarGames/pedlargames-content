@@ -11,12 +11,12 @@ This plugin provides a dedicated editor dock, custom resources for storing graph
 - **Multi-Port Connections**: Create complex locations with multiple entry and exit points, each with its own descriptive label.
 - **Smart Connection Rules**: Each port can only have one connection, preventing connection conflicts.
 - **Bidirectional Connections**: Easily toggle connections as bidirectional with a single button click. The editor provides clear visual feedback:
-  - **Green Lines & Ports**: Indicate a bidirectional connection.
-  - **Amber Lines & Ports**: Indicate a one-way connection.
+  - <span style='color: green;'>**Green Lines & Ports**</span>: Indicate a bidirectional connection.
+  - <span style='color: orange;'>**Amber Lines & Ports**</span>: Indicate a one-way connection.
 - **Locked and Hidden Connections**: Right-click on connection lines to lock/unlock/hide them. Locked and/or hidden connections provide visual and gameplay restrictions:
-  - **Red Ports**: Indicate locked connections in the editor.
-  - **Blue Ports**: Indicate hidden connections in the editor.
-  - **Purple Ports**: Indicate connections that are both locked and hidden.
+  - <span style='color: red;'>**Red Ports**</span>: Indicate locked connections in the editor.
+  - <span style='color: blue;'>**Blue Ports**</span>: Indicate hidden connections in the editor.
+  - <span style='color: purple;'>**Purple Ports**</span>: Indicate connections that are both locked and hidden.
   - **Runtime Exclusion**: Locked/hidden connections are excluded from pathfinding and normal navigation.
   - **UI Integration**: Can be displayed as disabled or hidden options in game UI to show inaccessible paths.
 - **Connection Context Menu**: Right-click on connection lines to access locking options and other connection-specific actions.
