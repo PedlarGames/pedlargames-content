@@ -25,6 +25,14 @@ This plugin provides a dedicated editor dock, custom resources for storing graph
 - **Optimized Runtime Navigation API**: A performant runtime script (`location_graph_runtime.gd`) with indexed lookups for fast graph traversal, pathfinding, and data retrieval.
 - **Example Scene**: Includes a ready-to-use example scene demonstrating how to load a graph and implement player navigation.
 
-## In Development
+## Screenshots
 
-This plugin is actively being developed. Follow me on Bluesky [@hugepedlar.bsky.social](https://bsky.app/profile/hugepedlar.bsky.social) to be notified when it's available.
+![Location Graph Editor Screenshot](https://raw.githubusercontent.com/PedlarGames/location-graph-editor/refs/heads/main/screenshots/example_graph.png)
+
+![Example Scene Screenshot](https://raw.githubusercontent.com/PedlarGames/location-graph-editor/refs/heads/main/screenshots/example_scene.png)
+
+![In-Game Example Screenshot](https://raw.githubusercontent.com/PedlarGames/location-graph-editor/refs/heads/main/screenshots/in-game-example.png)
+
+## Now Available
+
+The Location Graph Editor is now available on the [Godot Asset Library](https://godotengine.org/asset-library/asset/4444) and on [GitHub](https://github.com/PedlarGames/location-graph-editor).
