@@ -36,14 +36,14 @@ Whenever you see me write 'dialogue', assume I'm referring to both dialogue and 
 
 This is very much a rough overview, since my implementation is quite specific to my game, and my game code is, shall we say, idiosyncratic.
 
-Much of the glue that connects the location graph to Dialogue Manager is handled by a story.gd script, which builds the UI from dialogue resources and manages the flow of the game. Additionally, there is an autoload State Manager script, with state data stored in a custom resource for easy reference. Dialogue Manager can easily call autoload scripts from within dialogue scripts, which makes things very easy.
+Much of the glue that connects the location graph to Dialogue Manager is handled by the `story.gd` script, which builds the UI from dialogue resources and manages the flow of the game. Additionally, there is an autoload State Manager script, with state data stored in a custom resource for easy reference. Dialogue Manager can easily call autoload scripts from within dialogue scripts, which makes things very easy.
 
 ### Loading Dialogue Resources Based on Location
 
 My first insight was to create a dialogue script for each location node in the graph. The name of the dialogue script file corresponds to the location id in the graph, e.g. a location node with id "forest_clearing" would have a dialogue script file named "forest_clearing.dialogue". Thus, when the player enters a location, we load an associated dialogue resource based on the current location id.
 
 ```python
-story.gd
+# story.gd
 
 ## Given a location node, attempt to load the associated DialogueResource.
 ## The naming convention is that the dialogue resource is named after the location id.
@@ -71,7 +71,7 @@ Once we have the DialogueResource for the current location, we use it in a Dialo
 On some trigger activated by the player, or when the dialogue ends, we give the player the option to move to a connected location. We query the Location Graph Editor runtime script to get the list of connected locations, and present these as if they were choices in the dialogue. Then when the player selects a location, we update the current location in the State Manager, and load the dialogue for the new location.
 
 ```python
-story.gd
+# story.gd
 
 ## Add buttons to travel container for each neighbor (including locked ones)
 func _populate_travel_options() -> void:
