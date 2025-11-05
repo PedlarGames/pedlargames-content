@@ -18,6 +18,8 @@ I also created a runtime script that exposes functions to query the location gra
 
 Dialogue Manager is a powerful plugin for managing dialogue trees and branching narratives in Godot. It provides a robust framework for handling player choices, dialogue states, and narrative flow, and it can interact with other game functions and variables from within dialogue scripts. *The Bog Mother* is a text-heavy game, in which almost every action the player takes is mediated through dialogue, so integrating location management with Dialogue Manager seemed like a good fit.
 
+![Example Dialogue Script](https://github.com/PedlarGames/pedlargames-content/blob/main/content/articles/2025-11-05-location-graphs-and-dialogue-manager/gallery/example-dialogue-script.png?raw=true)
+
 ### Note
 
 Whenever you see me write 'dialogue', assume I'm referring to both dialogue and narrative text, since in my game these are often the same thing. Instead of the standard pattern of displaying one line of dialogue at a time next to a character's portrait, I'm using Dialogue Manager to display blocks of narrative text in a continuously appended log.
