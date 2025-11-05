@@ -4,7 +4,7 @@ This is a high level article describing how I integrated my [Location Graph Edit
 
 ## NOT A Tutorial
 
-This article is not intended as a step-by-step tutorial, but rather a high-level overview of how I approached the problem of managing locations in my game using Location Graph Editor and Dialogue Manager. My goal is to demonstrate how Location Graph Editor can be useful in a real world example, and to provide some ideas for how you might implement similar functionality in your own projects.
+This article is not intended as a step-by-step tutorial, but rather a high-level overview of how I approached the problem of managing locations in my game. My goal is to demonstrate how Location Graph Editor can be useful in a real world example, and to provide some ideas for how you might implement similar functionality in your own projects.
 
 Code samples are provided to illustrate key concepts, but they are not complete or fully functional on their own. You will need to adapt the ideas and code snippets to fit your specific game architecture and requirements.
 
@@ -68,7 +68,7 @@ Once we have the DialogueResource for the current location, we use it in a Dialo
 
 ### Moving Between Locations
 
-On some trigger activated by the player, or when the dialogue ends, we give the player the option to move to a connected location. We query the Location Graph Editor runtime script to get the list of connected locations, and present these as if they were choices in the dialogue. Then when the player selects a location, we update the current location in the State Manager, and load the dialogue for the new location.
+On some trigger activated by the player, or when the dialogue ends, we give the player the option to move to a connected location. We query the Location Graph Editor runtime script to get the list of connected locations, and present these as if they were choices in the dialogue. Then when the player selects a destination, we update the current location in the State Manager, and load the dialogue for the new location.
 
 ```gdscript
 # story.gd
