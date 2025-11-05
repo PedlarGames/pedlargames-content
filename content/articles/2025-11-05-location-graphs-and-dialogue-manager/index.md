@@ -1,6 +1,12 @@
 # Integrating Location Graph Editor with Dialogue Manager
 
-This is a high level article describing how I integrated my [Location Graph Editor](https://pedlargames.com/tools/location-graph-editor) plugin with [Nathan Hoad's Dialogue Manager](https://github.com/nathanhoad/godot_dialogue_manager) plugin for my interactive fiction game [The Bog Mother](https://pedlargames.com/games/the-bog-mother) made with Godot.
+This is a high level article describing how I integrated my [Location Graph Editor](https://pedlargames.com/tools/location-graph-editor) plugin with [Nathan Hoad's Dialogue Manager](https://github.com/nathanhoad/godot_dialogue_manager) plugin for my **interactive fiction** game [The Bog Mother](https://pedlargames.com/games/the-bog-mother) made with Godot.
+
+## NOT A Tutorial
+
+This article is not intended as a step-by-step tutorial, but rather a high-level overview of how I approached the problem of managing locations in my game using Location Graph Editor and Dialogue Manager. My goal is to demonstrate how Location Graph Editor can be useful in a real world example, and to provide some ideas for how you might implement similar functionality in your own projects.
+
+Code samples are provided to illustrate key concepts, but they are not complete or fully functional on their own. You will need to adapt the ideas and code snippets to fit your specific game architecture and requirements.
 
 ## The Problem
 
@@ -8,7 +14,7 @@ In a typical text adventure, or indeed any RPG or adventure game, the player mov
 
 ## The Solution
 
-I used Godot's [GraphEdit](https://docs.godotengine.org/en/stable/classes/class_graphedit.html) feature (used in the Visual Shader Editor, for example) to create a Location Graph Editor plugin. This allows me to visually create locations as nodes, and draw connecting lines between them. Each location node can have properties such as name, id, description, and any other metadata needed for the game. Each connection can be defined as one-way or bi-directional, locked/unlocked, and hidden/visible.
+I used Godot's [GraphEdit](https://docs.godotengine.org/en/stable/classes/class_graphedit.html) feature (used in the Visual Shader Editor, for example) to create my Location Graph Editor plugin. This allows me to visually create locations as nodes, and draw connecting lines between them. Each location node can have properties such as name, id, description, and any other metadata needed for the game. Each connection can be defined as one-way or bi-directional, locked/unlocked, and hidden/visible.
 
 I also created a runtime script that exposes functions to query the location graph. This script can return a list of connected locations from a given location, check if a path is locked, and so on.
 
@@ -16,7 +22,7 @@ I also created a runtime script that exposes functions to query the location gra
 
 ## Why Use Dialogue Manager?
 
-Dialogue Manager is a powerful plugin for managing dialogue trees and branching narratives in Godot. It provides a robust framework for handling player choices, dialogue states, and narrative flow, and it can interact with other game functions and variables from within dialogue scripts. *The Bog Mother* is a text-heavy game, in which almost every action the player takes is mediated through dialogue, so integrating location management with Dialogue Manager seemed like a good fit.
+Dialogue Manager is a highly adaptable plugin for managing dialogue trees and branching narratives in Godot. It provides a robust framework for handling player choices, dialogue states, and narrative flow, and it can interact with other game functions and variables from within dialogue scripts. *The Bog Mother* is a text-heavy game, in which almost every action the player takes is mediated through dialogue, so integrating location management with Dialogue Manager seemed like a good fit.
 
 ![Example Dialogue Script](https://github.com/PedlarGames/pedlargames-content/blob/main/content/articles/2025-11-05-location-graphs-and-dialogue-manager/gallery/example-dialogue-script.png?raw=true)
 
@@ -28,7 +34,9 @@ Whenever you see me write 'dialogue', assume I'm referring to both dialogue and 
 
 ## How I Did It
 
-This is very much a rough overview, since my implementation is quite specific to my game, and my game code is, shall we say, idiosyncratic. Much of the glue that connects the location graph to Dialogue Manager is handled by a story.gd script, which builds the UI from dialogue resources and manages the flow of the game. Additionally, there is an autoload State Manager script, with state data stored in a custom resource for easy reference. Dialogue Manager can easily call autoload scripts from within dialogue scripts, which makes things very easy.
+This is very much a rough overview, since my implementation is quite specific to my game, and my game code is, shall we say, idiosyncratic.
+
+Much of the glue that connects the location graph to Dialogue Manager is handled by a story.gd script, which builds the UI from dialogue resources and manages the flow of the game. Additionally, there is an autoload State Manager script, with state data stored in a custom resource for easy reference. Dialogue Manager can easily call autoload scripts from within dialogue scripts, which makes things very easy.
 
 ### Loading Dialogue Resources Based on Location
 
@@ -102,13 +110,7 @@ func _create_travel_button(neighbor_id: String) -> void:
 
 ## Handle moving to a new location.
 func go_to_location(location_id: String) -> void:
-    State.visit_location(location_id) # Update current location in State Manager and add it to visit history
-    _begin_dialogue_at_location(location_id) # Load the dialogue for the new location and display it
-
-## Begin dialogue at a given location ID.
-## Load the associated DialogueResource and starts from its first line.
-func _begin_dialogue_at_location(location_id: String) -> void:
-    # Update current location in State Manager
+    # Update current location in State Manager and add it to visit history
     State.visit_location(location_id)
     # Get the location node data from the runtime
     var node_data: LocationNodeData = runtime.get_location_node(State.get_current_location())
@@ -149,4 +151,17 @@ This allows for a dynamic narrative that responds to the player's journey throug
 
 ## Conclusion
 
-Hopefully this article has given you some ideas on how to use Location Graph Editor in your game, especially in conjunction with Dialogue Manager. The visual nature of the location graph makes it easy to design and maintain complex worlds, and Dialogue Manager is flexible enough to integrate with various game systems. If you're building an interactive fiction game in Godot, this may be a useful approach, but you can also use Location Graph Editor in other scenarios - for example by using hidden connections to gradually reveal nodes on a world map as the player explores.
+Hopefully this article has given you some ideas on how to use Location Graph Editor in your game, especially in conjunction with Dialogue Manager. The visual nature of the location graph makes it easy to design and maintain complex worlds, and Dialogue Manager is flexible enough to integrate with various game systems. If you're building an interactive fiction game in Godot, this may be a useful approach, but you can also use Location Graph Editor in other scenarios - for example by using hidden connections to gradually reveal nodes on a world map as the player explores, and use the built-in pathfinding to determine whether the player can reach a given destination from their current location.
+
+### Resources
+
+- [Location Graph Editor](https://pedlargames.com/tools/location-graph-editor)
+  - [GitHub Repository](https://github.com/PedlarGames/location-graph-editor)
+  - [Godot Asset Library](https://godotengine.org/asset-library/asset/4444)
+- [Dialogue Manager](https://dialogue.nathanhoad.net/)
+  - [GitHub Repository](https://github.com/nathanhoad/godot_dialogue_manager)
+  - [Godot Asset Library](https://godotengine.org/asset-library/asset/3654)
+
+### Comments or Questions?
+
+Reach me on Bluesky at [@hugepedlar.bsky.social](https://bsky.app/profile/hugepedlar.bsky.social) or visit the [Discussions section of the Location Graph Editor GitHub repository](https://github.com/PedlarGames/location-graph-editor/discussions).
