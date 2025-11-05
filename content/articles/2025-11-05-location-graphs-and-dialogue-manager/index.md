@@ -42,7 +42,7 @@ Much of the glue that connects the location graph to Dialogue Manager is handled
 
 My first insight was to create a dialogue script for each location node in the graph. The name of the dialogue script file corresponds to the location id in the graph, e.g. a location node with id "forest_clearing" would have a dialogue script file named "forest_clearing.dialogue". Thus, when the player enters a location, we load an associated dialogue resource based on the current location id.
 
-```python
+```gdscript
 # story.gd
 
 ## Given a location node, attempt to load the associated DialogueResource.
