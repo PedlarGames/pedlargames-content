@@ -70,7 +70,7 @@ Once we have the DialogueResource for the current location, we use it in a Dialo
 
 On some trigger activated by the player, or when the dialogue ends, we give the player the option to move to a connected location. We query the Location Graph Editor runtime script to get the list of connected locations, and present these as if they were choices in the dialogue. Then when the player selects a location, we update the current location in the State Manager, and load the dialogue for the new location.
 
-```python
+```gdscript
 # story.gd
 
 ## Add buttons to travel container for each neighbor (including locked ones)
@@ -129,7 +129,7 @@ func go_to_location(location_id: String) -> void:
 
 We don't always want the same dialogue to play when the player re-enters a location. In my State Manager, I keep track of which locations have been visited (and in which order), allowing me to branch dialogues based on visit history.
 
-```python
+```gdscript
 ## In a dialogue script:
 ~ start
 if State.get_visit_count("forest_clearing") == 0:
@@ -138,7 +138,7 @@ else:
     => returning_forest_clearing
 ```
 
-```python
+```gdscript
 ## In a dialogue script:
 ~ start
 if State.get_previous_location() == "ancient_tree":
