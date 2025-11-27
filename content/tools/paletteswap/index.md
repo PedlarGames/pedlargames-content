@@ -152,3 +152,7 @@ This project is provided as-is for educational and commercial use. See LICENSE f
 - [ ] Godot editor plugin variant
 - [ ] Batch undo/redo
 - [ ] Nearest-color matching for partial mappings
+
+## itch.io Download
+
+Download the latest version of PaletteSwap from [itch.io](https://pedlargames.itch.io/pedlars-paletteswap).
