@@ -47,7 +47,7 @@ You may see a SmartScreen warning on first run; this is normal for new apps. Cli
      - Click a lospec color to assign it to the selected source color
      - Click the target color picker to finalize
 
-4. **Export**
+4. **Export Image(s)**
    - Click "Export Images"
    - Select output directory
    - Configure suffix (default: "_remap")
@@ -68,10 +68,16 @@ You may see a SmartScreen warning on first run; this is normal for new apps. Cli
 - **Load Mapping** - Import previously saved mappings
 - Mappings are stored in `user://mappings/`
 
+#### Export/Import Palette
+
+- **Export Palette** - Save the extracted palette as a text file for future use
+- **Import Palette** - Load a palette from a text file, similar to Lospec import
+
 #### Palette Options
 
 - **Skip Fully Transparent Pixels** - Exclude pixels with alpha = 0 from palette extraction (reduces palette clutter)
 - **Group by RGB (Alpha Variations)** - Merge colors with identical RGB but different alpha values (useful for transparency gradients and anti-aliased sprites)
+- **Quantize to N Colors** - When in Quantized mode, specify the number of colors to reduce the palette to (e.g., 16, 32, 64)
 
 #### Settings
 
