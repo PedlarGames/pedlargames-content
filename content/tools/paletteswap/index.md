@@ -73,6 +73,10 @@ You may see a SmartScreen warning on first run; this is normal for new apps. Cli
   - **Hue & Brightness** - Prioritizes hue matching
   - **CIE Lab** - Perceptually uniform color matching
 
+![Luminance Auto-Mapping Example](https://github.com/PedlarGames/pedlargames-content/blob/main/content/tools/paletteswap/gallery/luminance-swap.png?raw=true)
+
+![Perceptual Auto-Mapping Example](https://github.com/PedlarGames/pedlargames-content/blob/main/content/tools/paletteswap/gallery/perceptual-swap.png?raw=true)
+
 #### Save/Load Mappings
 
 - **Save Mapping** - Export your color mappings as JSON
