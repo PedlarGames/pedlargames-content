@@ -72,13 +72,13 @@
         {
           "filename": "PaletteSwap_Setup.exe",
           "platform": "Windows",
-          "version": "0.2.0",
+          "version": "0.3.0",
           "size": 34725632,
           "sizeFormatted": "33.1 MB",
-          "url": "https://github.com/PedlarGames/pedlargames-content/releases/download/paletteswap-v0.2.0/PaletteSwap_Setup.exe"
+          "url": "https://github.com/PedlarGames/pedlargames-content/releases/download/paletteswap-v0.3.0/PaletteSwap_Setup.exe"
         }
       ],
-      "version": "0.2.0",
+      "version": "0.3.0",
       "releaseDate": "2025-11-27",
       "featured": true
     },

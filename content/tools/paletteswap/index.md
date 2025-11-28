@@ -8,7 +8,9 @@ Works best with pixel art with low resolution images, but can also handle photos
 
 **Batch Processing** - Process multiple images at once  
 **Palette Extraction** - Exact color enumeration or quantized palette reduction  
+**Sorted Palettes** - Extracted colors are automatically sorted by hue for easy navigation  
 **Color Mapping** - Visual interface to remap source colors to target colors  
+**Auto-Mapping** - Automatically match source colors to target palette using smart algorithms  
 **Save/Load Mappings** - Persist palette mappings as JSON for reuse  
 **Lospec Import** - Import color palettes directly from Lospec.com  
 **Flexible Input** - Load entire folders or individual images  
@@ -61,6 +63,15 @@ You may see a SmartScreen warning on first run; this is normal for new apps. Cli
 - Browse [Lospec Palette List](https://lospec.com/palette-list) for thousands of curated palettes
 - After importing, lospec colors will be shown above your current mappings for easy selection
 - Click a lospec color to assign it to the selected source color, then click the target color picker to finalize
+
+#### Auto-Mapping
+
+- Automatically map your extracted source palette to a loaded target palette (e.g., from Lospec)
+- Select from multiple matching strategies:
+  - **Weighted RGB** - Standard color matching
+  - **Luminance** - Matches based on brightness (great for grayscale to color)
+  - **Hue & Brightness** - Prioritizes hue matching
+  - **CIE Lab** - Perceptually uniform color matching
 
 #### Save/Load Mappings
 
